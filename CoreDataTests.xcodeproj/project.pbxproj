@@ -22,6 +22,9 @@
 		3BD7524018FB374C007549CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD7521F18FB374C007549CC /* UIKit.framework */; };
 		3BD7524818FB374C007549CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BD7524618FB374C007549CC /* InfoPlist.strings */; };
 		3BD7524A18FB374C007549CC /* CoreDataTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7524918FB374C007549CC /* CoreDataTestsTests.m */; };
+		3BD7525518FB376B007549CC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7525318FB376B007549CC /* Model.xcdatamodeld */; };
+		3BD7525718FB3B69007549CC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD7525618FB3B69007549CC /* CoreData.framework */; };
+		3BD7526B18FB560D007549CC /* sample.db in Resources */ = {isa = PBXBuildFile; fileRef = 3BD7526A18FB560D007549CC /* sample.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		3BD7524518FB374C007549CC /* CoreDataTestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataTestsTests-Info.plist"; sourceTree = "<group>"; };
 		3BD7524718FB374C007549CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BD7524918FB374C007549CC /* CoreDataTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestsTests.m; sourceTree = "<group>"; };
+		3BD7525418FB376B007549CC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3BD7525618FB3B69007549CC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3BD7526A18FB560D007549CC /* sample.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD7525718FB3B69007549CC /* CoreData.framework in Frameworks */,
 				3BD7521E18FB374C007549CC /* CoreGraphics.framework in Frameworks */,
 				3BD7522018FB374C007549CC /* UIKit.framework in Frameworks */,
 				3BD7521C18FB374C007549CC /* Foundation.framework in Frameworks */,
@@ -103,6 +110,7 @@
 		3BD7521A18FB374C007549CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BD7525618FB3B69007549CC /* CoreData.framework */,
 				3BD7521B18FB374C007549CC /* Foundation.framework */,
 				3BD7521D18FB374C007549CC /* CoreGraphics.framework */,
 				3BD7521F18FB374C007549CC /* UIKit.framework */,
@@ -114,6 +122,7 @@
 		3BD7522118FB374C007549CC /* CoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
+				3BD7526A18FB560D007549CC /* sample.db */,
 				3BD7522A18FB374C007549CC /* CDTAppDelegate.h */,
 				3BD7522B18FB374C007549CC /* CDTAppDelegate.m */,
 				3BD7522D18FB374C007549CC /* Main_iPhone.storyboard */,
@@ -122,6 +131,7 @@
 				3BD7523418FB374C007549CC /* CDTViewController.m */,
 				3BD7523618FB374C007549CC /* Images.xcassets */,
 				3BD7522218FB374C007549CC /* Supporting Files */,
+				3BD7525318FB376B007549CC /* Model.xcdatamodeld */,
 			);
 			path = CoreDataTests;
 			sourceTree = "<group>";
@@ -233,6 +243,7 @@
 			files = (
 				3BD7523218FB374C007549CC /* Main_iPad.storyboard in Resources */,
 				3BD7523718FB374C007549CC /* Images.xcassets in Resources */,
+				3BD7526B18FB560D007549CC /* sample.db in Resources */,
 				3BD7522F18FB374C007549CC /* Main_iPhone.storyboard in Resources */,
 				3BD7522618FB374C007549CC /* InfoPlist.strings in Resources */,
 			);
@@ -256,6 +267,7 @@
 				3BD7522C18FB374C007549CC /* CDTAppDelegate.m in Sources */,
 				3BD7522818FB374C007549CC /* main.m in Sources */,
 				3BD7523518FB374C007549CC /* CDTViewController.m in Sources */,
+				3BD7525518FB376B007549CC /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +492,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3BD7525318FB376B007549CC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3BD7525418FB376B007549CC /* Model.xcdatamodel */,
+			);
+			currentVersion = 3BD7525418FB376B007549CC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3BD7521018FB374C007549CC /* Project object */;
 }

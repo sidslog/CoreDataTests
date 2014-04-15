@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Card" syncable="YES">
+    <entity name="AAA" parentEntity="Base" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Base" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="BBB" parentEntity="Base" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Card" parentEntity="Base" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="cards" inverseEntity="User" syncable="YES"/>
     </entity>
@@ -13,7 +23,10 @@
     </entity>
     <elements>
         <element name="Card" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Spec" positionX="-45" positionY="27" width="128" height="58"/>
         <element name="User" positionX="-54" positionY="-9" width="128" height="73"/>
-        <element name="Spec" positionX="-45" positionY="27" width="128" height="60"/>
+        <element name="Base" positionX="-63" positionY="9" width="128" height="75"/>
+        <element name="AAA" positionX="-45" positionY="18" width="128" height="58"/>
+        <element name="BBB" positionX="-45" positionY="27" width="128" height="60"/>
     </elements>
 </model>
